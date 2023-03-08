@@ -5,3 +5,22 @@
 html {
   font-size: 10px;
 }
+
+body {
+  margin: 0;
+  width: 100vw;
+  min-height: 100vw;
+  background-color: aquamarine;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: grid;
+  grid-template-rows: grid;
+}
+
+.grid-items {
+  border: 0.1rem solid gray;
+  font-size: 2rem;
+  background-color: white;
+}
