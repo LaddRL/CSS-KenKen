@@ -11,6 +11,15 @@ body {
   width: 100vw;
   min-height: 100vw;
   background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: white;
+  color: black;
+  border: 0.5rem solid black;
 }
 
 .grid {
@@ -25,19 +34,32 @@ body {
   background-color: white;
 }
 
-box3, box7, box10, box11, box12, box15 {
+#box3, #box7, #box10, #box11, #box12, #box15 {
   border-left: 0.5rem solid black;
 }
 
-prompt {
-  position: absolute;
-  top: 0%;
-  right: 0%;
+#box1, #box2, #box3, #box4, #box5, #box8, #box9, #box10, #box11 {
+  border-bottom: 0.5rem solid black;
 }
 
-answer {
+.prompt {
+  position: absolute;
+}
+
+.answer {
   width: 50%;
   height: 50%;
   text-align: center;
 }
 
+.special {
+  border: none;
+  font-size: 2rem;
+}
+
+@media screen {
+  min-width: 475px;
+  html {
+    font-size: 16px;
+  }
+}
